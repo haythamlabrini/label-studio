@@ -1,0 +1,1 @@
+web: label-studio start drusen-project --host 0.0.0.0 --port $PORT

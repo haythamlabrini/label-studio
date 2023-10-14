@@ -9,6 +9,9 @@ export POSTGRE_NAME="${BASH_REMATCH[5]}"
 export POSTGRE_HOST="${BASH_REMATCH[3]}"
 export POSTGRE_PORT="${BASH_REMATCH[4]}"
 export DJANGO_DB='default'
+export LABEL_STUDIO_STORAGE="gcs"
+export LABEL_STUDIO_GCS_BUCKET_NAME="drusen-images"
+export LABEL_STUDIO_GCS_CREDENTIALS_JSON="../credentials/drusen-8bb3b456093c.json"
 
 ./deploy/docker-entrypoint.sh label-studio \
   --host ${HOST:-""} \
